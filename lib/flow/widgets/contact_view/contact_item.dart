@@ -14,7 +14,8 @@ class ContactItem extends StatelessWidget {
     return Container(
       color: Colors.white,
       child: Padding(
-        padding: const EdgeInsets.only(top: 8.0, bottom: 8.0, left: 16.0, right: 16.0),
+        padding: const EdgeInsets.only(
+            top: 8.0, bottom: 8.0, left: 16.0, right: 16.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
@@ -28,8 +29,9 @@ class ContactItem extends StatelessWidget {
               padding: const EdgeInsets.only(left: 16.0),
               child: TextViewMedium(),
             )),
-            RaisedButton(
-              color: CustomColors.neon_green,
+            ElevatedButton(
+              style:
+                  ElevatedButton.styleFrom(onPrimary: CustomColors.neon_green),
               onPressed: () {},
               child: Text(
                 'invite',

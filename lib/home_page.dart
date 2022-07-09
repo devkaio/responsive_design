@@ -21,9 +21,11 @@ class HomePage extends StatelessWidget {
               LabelWidget('Flow', FlowHomePage()),
               LabelWidget('MediaQeuryLayout', MediaQueryLayout()),
               LabelWidget('LayoutBuilderLayout', LayoutBuilderLayout()),
-              LabelWidget('OrientationBuilderLayout', OrientationBuilderLayout()),
+              LabelWidget(
+                  'OrientationBuilderLayout', OrientationBuilderLayout()),
               LabelWidget('ExpandedFlexibleLayout', ExpandedFlexibleLayout()),
-              LabelWidget('FractionallySizedBoxLayout', FractionallySizedBoxLayout()),
+              LabelWidget(
+                  'FractionallySizedBoxLayout', FractionallySizedBoxLayout()),
               LabelWidget('AspectRatioLayout', AspectRatioLayout()),
             ],
           ),
@@ -44,11 +46,12 @@ class LabelWidget extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: RaisedButton(
-            color: MyColors.darkGreen,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20.0),
-            ),
+          child: ElevatedButton(
+            style: ElevatedButton.styleFrom(
+                onPrimary: MyColors.darkGreen,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+                )),
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
