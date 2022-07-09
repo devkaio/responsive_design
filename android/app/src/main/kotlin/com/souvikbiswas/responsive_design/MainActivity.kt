@@ -1,4 +1,4 @@
-package com.souvikbiswas.responsive_design
+package dev.kaio.responsive_design
 
 import io.flutter.embedding.android.FlutterActivity
 
